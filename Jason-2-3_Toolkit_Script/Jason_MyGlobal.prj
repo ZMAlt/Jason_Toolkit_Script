@@ -1,0 +1,130 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="2980199300" file="D:\Research\Data\altimetry_data\Jason-toolkit\GUI_Tool\GUI_Tool\Jason_MyGlobal.prj" location="D:\Research\Data\altimetry_data\Jason-toolkit\GUI_Tool\GUI_Tool" name="Jason_MyGlobal" preferred-package-location="D:\Research\Data\altimetry_data\Jason-toolkit\GUI_Tool\GUI_Tool\Jason_GDR_MyGlobal\runtime" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>Jason_MyGlobal</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>2.1</param.version>
+    <param.authnamewatermark>Modurodoluwa Okeowo &amp; Hyongki Lee (PhD.)</param.authnamewatermark>
+    <param.email>hlee@uh.edu</param.email>
+    <param.company>University of Houston, Texas, U.S.A.</param.company>
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.net.saved.interface />
+    <param.installpath.string>\jason2gdr\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\Jason_GDR_MyGlobal\App</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\Jason_GDR_MyGlobal\bin</param.files.only>
+    <param.output>${PROJECT_ROOT}\Jason_GDR_MyGlobal\runtime</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+      <item>35001</item>
+    </param.required.mcr.products>
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MatlabRunTime</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>true</param.create.log>
+    <param.log.file>log.txt</param.log.file>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.net.saved.interface />
+      <param.installpath.combo />
+      <param.logo />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\VIETNAM_TRAINING.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\altimetryoutlier.m</file>
+      <file>${PROJECT_ROOT}\copyNETCDF.m</file>
+      <file>${PROJECT_ROOT}\decyear2matdate.m</file>
+      <file>${PROJECT_ROOT}\dirwalk.m</file>
+      <file>${PROJECT_ROOT}\geoidegm2008grid.mat</file>
+      <file>${PROJECT_ROOT}\iqrange.m</file>
+      <file>${PROJECT_ROOT}\j2_FtpDownload.m</file>
+      <file>${PROJECT_ROOT}\j2_SingleProcess_TimeSeries.m</file>
+      <file>${PROJECT_ROOT}\j3_FtpDownload.m</file>
+      <file>${PROJECT_ROOT}\j3_SingleProcess_TimeSeries.m</file>
+      <file>${PROJECT_ROOT}\jason2_gdr_info.m</file>
+      <file>${PROJECT_ROOT}\jason3_gdr_info.m</file>
+      <file>${PROJECT_ROOT}\mjd2gre.m</file>
+      <file>${PROJECT_ROOT}\netcdf_read.m</file>
+      <file>${PROJECT_ROOT}\uncertainty.m</file>
+      <file>${PROJECT_ROOT}\VIETNAM_TRAINING.fig</file>
+    </fileset.resources>
+    <fileset.package>
+      <file>${PROJECT_ROOT}\netcdf_read.m</file>
+    </fileset.package>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\Jason_GDR_MyGlobal\App" name="splash.png" optional="false">D:\Research\Data\altimetry_data\Jason-toolkit\GUI_Tool\GUI_Tool\Jason_GDR_MyGlobal\App\splash.png</file>
+      <file location="${PROJECT_ROOT}\Jason_GDR_MyGlobal\App" name="readme.txt" optional="true">D:\Research\Data\altimetry_data\Jason-toolkit\GUI_Tool\GUI_Tool\Jason_GDR_MyGlobal\App\readme.txt</file>
+      <file location="${PROJECT_ROOT}\Jason_GDR_MyGlobal\App" name="Jason_MyGlobal.exe" optional="false">D:\Research\Data\altimetry_data\Jason-toolkit\GUI_Tool\GUI_Tool\Jason_GDR_MyGlobal\App\Jason_MyGlobal.exe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Program Files\MATLAB\R2015aSP1</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.1</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
